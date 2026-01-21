@@ -1,0 +1,22 @@
+{
+  "name": "contextualise",
+  "version": "1.0.0",
+  "description": "Mutation contextualiser for FASTA sequences",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.3.1"
+  }
+}
