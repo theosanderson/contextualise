@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react'
+import { SC2_GENOME } from './sc2Genome'
 
 // All possible trinucleotide contexts for TSV output
 const BASES = ['A', 'C', 'G', 'T']
@@ -129,7 +130,16 @@ function App() {
 
       <div className="input-section">
         <div className="input-group">
-          <label htmlFor="fasta">FASTA sequence (header optional):</label>
+          <div className="label-row">
+            <label htmlFor="fasta">FASTA sequence (header optional):</label>
+            <button
+              type="button"
+              className="load-genome-button"
+              onClick={() => setFastaInput(SC2_GENOME)}
+            >
+              Load SARS-CoV-2
+            </button>
+          </div>
           <textarea
             id="fasta"
             value={fastaInput}
